@@ -1,4 +1,0 @@
-name: chess
-channels:
-  - defaults
-prefix: /home/wis/anaconda3/envs/chess
