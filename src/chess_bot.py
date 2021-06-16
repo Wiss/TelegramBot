@@ -92,7 +92,7 @@ def general_info(update, context):
         )
 
 def jakob(update, context):        
-       update.message.reply_text("let's make this shit work!! :muscle: :muscle: (ง˙o˙)ว")
+       update.message.reply_text("let's make this shit work!! (ง˙o˙)ว")
         
 
 #### Main  
