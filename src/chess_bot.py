@@ -90,6 +90,9 @@ def general_info(update, context):
         Aare flow: {flow} m3/s \n \
         Air temperature: {air_temp} °C'
         )
+
+def jakob(update, context):        
+       update.message.reply_text("let's make this shit work!! :muscle: :muscle: (ง˙o˙)ว")
         
 
 #### Main  
@@ -105,6 +108,7 @@ def main():
     dp.add_handler(CommandHandler('dog',dog))
     dp.add_handler(CommandHandler('cat',cat))
     dp.add_handler(CommandHandler('aare',general_info))
+    dp.add_handler(CommandHandler('jakob',jakob))
     updater.start_polling()
     updater.idle()
     
