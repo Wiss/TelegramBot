@@ -4,6 +4,8 @@ from telegram.ext.dispatcher import run_async
 import requests
 import re
 
+        
+        
 #### start command
 def start(update, context):
     '''Send a message when the command /start is issued.'''
@@ -92,7 +94,11 @@ def general_info(update, context):
 
 #### Main  
 def main():
-    updater = Updater('1826495896:AAHP-SB55LyiUXuvYC9gxRLhZmZaOUu6wOE', use_context=True)
+    ## load token
+    with open("token.txt", "r") as f:
+         token = f.read()[0:46] # not sure why it works..
+    ## update and interact
+    updater = Updater(token, use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start',start))
     dp.add_handler(CommandHandler('help',help_command))
