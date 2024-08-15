@@ -1,5 +1,5 @@
-# ChessBot
-Chess bot for Telegram
+# TelegramBot
+Simple bot for Telegram
 
 ### How to use ### 
 To use this repository in your own machine:
